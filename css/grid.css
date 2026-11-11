@@ -8,11 +8,11 @@
 }
 
 .grid-columns {
-    grid-template-columns: 100px 100px 100px;
+    grid-template-columns: 80px 80px 80px;
 }
 
 .grid-rows {
-    grid-template-rows: 40px 40px 40px;
+    grid-template-rows: 30px 30px 30px;
 }
 
 .grid-template {
@@ -20,7 +20,7 @@
 }
 
 .non-fraction {
-    grid-template-columns: 50px 100px 150px;
+    grid-template-columns: 40px 80px 120px;
 }
 
 .fraction {
@@ -33,23 +33,23 @@
 }
 
 .grid-gap {
-    gap: 10px;
+    gap: 8px;
 }
 
 /* grid-template-area */
 #grid-template-area {
     display: grid;
-    grid-template-columns: 100px 1fr 100px;
+    grid-template-columns: 80px 1fr 80px;
     grid-template-rows: auto 1fr auto;
     grid-template-areas:
         "header header header"
         "sidebar content ads"
         "footer footer footer";
-    gap: 10px;
-    min-height: 200px;
+    gap: 8px;
+    min-height: 150px;
 
     .item {
-        padding: 10px;
+        padding: 8px;
     }
 
     .header {
@@ -77,7 +77,7 @@
 .grid-ji {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 40px);
+    grid-template-rows: repeat(2, 30px);
 }
 
 .ji-start {
@@ -116,8 +116,8 @@
 /* Justify Content */
 .grid-jc {
     display: grid;
-    grid-template-columns: repeat(3, 60px);
-    grid-template-rows: repeat(2, 40px);
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: repeat(2, 30px);
     width: 100%;
 }
 
@@ -148,9 +148,9 @@
 /* Align Content */
 .grid-ac {
     display: grid;
-    grid-template-columns: repeat(3, 60px);
-    grid-template-rows: repeat(2, 40px);
-    height: 200px;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: repeat(2, 30px);
+    height: 150px;
 }
 
 .ac-start {
@@ -180,8 +180,8 @@
 /* Justify Self */
 #justify-self {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 60px;
-    gap: 10px;
+    grid-template-rows: 50px;
+    gap: 8px;
 
     .js-stretch {
         justify-self: stretch;
@@ -203,8 +203,8 @@
 /* Align Self */
 #align-self {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 60px;
-    gap: 10px;
+    grid-template-rows: 50px;
+    gap: 8px;
 
     .as-stretch {
         align-self: stretch;
